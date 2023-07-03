@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokemon</title>
+        <script src="script.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <style>
+            body {
+                display: grid;
+                place-content: center;
+                text-align: center;
+                height: 100vh;
+                gap: 10px;
+                background: linear-gradient(rgb(64, 116, 229), rgb(101, 42, 116));
+                font-family: 'Press Start 2P', cursive;
+            }
+
+            main {
+                padding: 10px 30px;
+                border: 5px solid white;
+                border-radius: 20px;
+                background-color: rgba(255, 255, 255, 0.344);
+            }
+
+            input {
+                padding: 5px;
+                border-radius: 10px;
+            }
+
+            img {
+                height: 200px;
+                width: 200px;
+                border: 5px solid white;
+                border-radius: 20px;
+            }
+
+            p {
+                text-transform: uppercase;
+                font-size: 1.5rem;
+            }
+
+            .error {
+                visibility: hidden;
+                color: red;
+                font-size: .5rem;
+            }
+
+            .error.active {
+                visibility: visible;  
+            }  
+        </style>
+    </head>
+    <body>
+        <main>
+            <input class="input" type="text" placeholder="Type Pokemon Name"/>
+            <p class="error active">pokemon not found!</p>
+            <h1>POKEMON</h1>
+            <img src="" alt="sprite"/>
+            <p id="name">name</p>
+        </main>
+        
+    </body>
+</html>
